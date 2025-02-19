@@ -1,0 +1,25 @@
+@import "../mixins";
+
+.logo {
+    $block: &;
+    
+    &__svg {
+        width: 139px;
+        height: 36px;
+        
+        & use {
+            fill: #656293;
+        }
+    }
+
+    // .logo .logo--light .logo__svg use { }
+    &--light {
+
+        & #{$block}__svg {
+
+            & use {
+                fill:#fff;
+            }
+        }
+    }
+}
