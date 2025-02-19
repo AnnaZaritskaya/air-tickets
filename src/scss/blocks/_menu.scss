@@ -1,0 +1,36 @@
+@import "../mixins";
+
+.menu {
+    $block:&;
+
+    &__link {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #181818;
+
+        &:hover {
+            color: #656293;
+        }
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+    &__icon {
+        position: relative;
+        top: 6px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &--compact {
+        & #{$block}__link{
+            font-weight: 400;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
