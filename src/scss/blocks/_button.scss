@@ -1,6 +1,59 @@
 @import "../mixins";
 
 .button {
+    $block: &;
 
-    
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    // max-width: 130px;
+    min-width: 94px;
+    border-radius: 5px;
+    padding: 6px 23px;
+    background: #656293;
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+        stroke: #fff;
+    }
+
+    &--transparent {
+        color: #151515;
+        background: none;
+    }
+
+    &--full {
+        font-size: 18px;
+        text-transform: capitalize;
+        padding: 26px;
+        border-radius: 10px;
+
+        & #{$block}__icon {
+            margin-left: 49px;
+        }
+    }
+
+    &--big {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 182%;
+        border-radius: 12px;
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    &--light {
+        color: #151515;
+        box-shadow: 0 12px 32px 0 rgba(255, 255, 255, 0.2);
+        background: #fff;
+    }
 }
