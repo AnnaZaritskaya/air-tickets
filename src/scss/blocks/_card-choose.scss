@@ -1,0 +1,67 @@
+@import "../mixins";
+
+.card-choose {
+    $block: &;
+
+    padding: 24px;
+    max-width: 400px;
+    background: #f5f5f5;
+
+    &__title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.25;
+        color: #151515;
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        color: #a9a9aa;
+        margin-bottom: 24px;
+    }
+
+    &__content {
+        margin-bottom: 83px;
+    }
+
+    &__sell {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.25;
+        color: #161616;
+        margin-bottom: 24px;
+    }
+
+    &__sell-small {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.25;
+        color: #161616;
+    }
+
+    &--left {
+        border-radius: 20px 0 0 20px;
+    }
+
+    &--right {
+        border-radius: 0 20px 20px 0;
+    }
+
+    &--dark {
+        border-radius: 20px;
+        max-width: 384px;
+        background: #656293;
+
+        & #{$block}__title,
+        & #{$block}__sell,
+        & #{$block}__sell-small {
+            color: #fff;
+        }
+    }
+}
