@@ -1,6 +1,6 @@
 @import "../mixins";
 
-.price {
+.list {
     $block: &;
 
     &__item {
@@ -19,6 +19,10 @@
             height: 20px;
             background-image: url("../../src/img/VectorDark.svg");
         }
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
     }
 
     &--light {
@@ -30,5 +34,14 @@
             }
         }
 
+    }
+
+    @at-root .card-choose & {
+        &::after {
+            content: "";
+            display: block;
+            border: 1px dashed #a9a9aa;
+            margin-top: 18px;
+        }
     }
 }
