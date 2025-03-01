@@ -1,0 +1,17 @@
+@import "../mixins";
+
+.membership {
+    &__wrapper{
+        width: 1232px;
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 105px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+}

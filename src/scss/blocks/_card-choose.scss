@@ -3,9 +3,10 @@
 .card-choose {
     $block: &;
 
-    padding: 24px;
+    width: 100%;
     max-width: 400px;
     background: #f5f5f5;
+    padding: 24px;
 
     &__title {
         font-family: "Poppins", sans-serif;
@@ -63,5 +64,10 @@
         & #{$block}__sell-small {
             color: #fff;
         }
+    }
+
+    &--up {
+        position: relative;
+        top: -40px;
     }
 }

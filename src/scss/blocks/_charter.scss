@@ -1,0 +1,15 @@
+@import "../mixins";
+
+.charter {
+    background: url(../../src/img/Frame.png) right bottom no-repeat;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+}

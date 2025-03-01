@@ -2,9 +2,32 @@
 
 .page {
 
+    &__body {
+        overflow-x: hidden;
+    }
+
     &__jet {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    &__info {
+        padding-top: 25px;
+        padding-bottom: 22px;
+    }
+
+    &__charter {
+        padding-top: 22px;
+        padding-bottom: 70px;
+    }
+
+    &__membership {
+        padding-bottom: 218px;
+    }
+
+    &__footer {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 15px;
     }
     
 }
