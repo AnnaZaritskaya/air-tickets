@@ -1,0 +1,13 @@
+@import "../mixins";
+
+.text-mono {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(21, 21, 21, 0.6);
+
+    &--uppercase {
+        text-transform: uppercase;
+    }
+
+}

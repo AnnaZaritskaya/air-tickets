@@ -1,0 +1,62 @@
+@import "../mixins";
+
+.ticket {
+    display: flex;
+    width: 100%;
+    min-width: 300px;
+    max-width: fit-content;
+    padding: 16px 20px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+
+    &__item {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 4px;
+        text-transform: capitalize;
+        white-space: nowrap;
+        color: #151515;
+    }
+
+    &__icon {
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+        
+        @at-root .ticket__item:first-child & {
+            margin-left: 24px;
+        }
+    }
+
+    &__top {
+        margin-bottom: 4px;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+        }
+
+        &:not(:last-child) {
+          margin-right: 44px;
+        }
+    }
+
+    @at-root .booking__body & {
+        &:last-child {
+            margin-left: 34px;
+        }
+    }
+}
