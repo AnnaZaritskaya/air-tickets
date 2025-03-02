@@ -1,0 +1,62 @@
+@import "../mixins";
+
+.booking {
+    padding: 30px;
+    margin-top: -120px;
+    box-shadow:
+        0 1px 3px 0 rgba(19, 10, 46, 0.13),
+        0 3px 14px 0 rgba(19, 10, 46, 0.03),
+        0 8px 32px 0 rgba(19, 10, 46, 0.07),
+        0 30px 84px 0 rgba(19, 10, 46, 0.08);
+    background: #fff;
+    border-radius: 12px;
+
+    &__top {
+        margin-bottom: 24px;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    &__reverse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        border: 1px solid #aaaaaa;
+        border-radius: 100%;
+    }
+
+    &__reverse-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__link {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #151515;
+    }
+
+    &__button {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+    }
+}
